@@ -12,10 +12,11 @@
 /* Body */
 body {
   font-family: "Roboto", Arial, sans-serif;
-  background-color: rgb(40, 42, 54); /* dunkler Hintergrund */
-  color: bisque; /* gut lesbarer Text */
+  background-color: rgb(255, 255, 255); /* dunkler Hintergrund */
+  color: rgb(6, 6, 6); /* gut lesbarer Text */
   padding: 32px; /* Abstand vom Rand */
   line-height: 1.5; /* bessere Lesbarkeit */
+  font-size: 22px;
 }
 
 /* Links */
