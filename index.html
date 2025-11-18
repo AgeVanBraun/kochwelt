@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/font.css">
-    <link rel="stylesheet" href="./styles/standard.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="./scripts/template.js"></script>
     <script src="./scripts/script.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-<h1>Hello World!</h1>
-</body>
+    <title>Kochwelt</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo.png" alt="logo kochwelt" />
+      <nav>
+        <ol>
+          <li><a href="#start">START</a></li>
+          <li><a href="#start">Rezept des Tages</a></li>
+          <li><a href="#start">KONTAKT</a></li>
+          <li><a href="#start">IMPRESSUM</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section class="title-header">
+        <h1>Griechicher Bauernsalat</h1>
+        <img class="title-banner" src="./assets/img/salad.jpg" alt="bild salat" />
+        <div class="icons">
+          <div class="time">
+            <img src="./assets/icon/clock-regular.svg" alt="uhr icon" />
+            <p>15 Min.</p>
+          </div>
+          <div class="level">
+            <img src="./assets/icon/brain-solid.svg" alt="brain icon" />
+            <p>simple</p>
+          </div>
+          <div class="date">
+            <img src="./assets/icon/calendar-alt-regular.svg" alt="kalendar icon" />
+            <p>28.11.2025</p>
+          </div>
+        </div>
+      </section>
+      <search class="ingredients">
+        <div class="calculator">
+          <label for="amount">
+            Zutaten:
+            <input maxlength="2" min="0" max="20" id="amount" type="number" />
+            <button onclick="calcBtn()">Portion</button>
+          </label>
+        </div>
+        <div class="table">
+          <table>
+            <tr>
+              <td id="element01">1</td>
+              <td>Saltgurke (n)</td>
+            </tr>
+            <tr>
+              <td id="element02">2</td>
+              <td>Paprikaschot(n), rot und grün</td>
+            </tr>
+            <tr class="highlight">
+              <td id="element03">500</td>
+              <td>g Tomate (n)</td>
+            </tr>
+            <tr>
+              <td id="element04">2</td>
+              <td>Zwiebel(n)</td>
+            </tr>
+            <tr class="highlight">
+              <td id="element05">200</td>
+              <td>g Schafskäse (n)</td>
+            </tr>
+            <tr>
+              <td id="element06">1</td>
+              <td>Glas Oliven, schwarze, ca 100g</td>
+            </tr>
+            <tr>
+              <td id="element07">1</td>
+              <td>Zitrone(n)</td>
+            </tr>
+            <tr class="highlight">
+              <td id="element08">125</td>
+              <td>ml Olivenöl</td>
+            </tr>
+          </table>
+        </div>
+      </search>
+    </main>
+  </body>
 </html>
