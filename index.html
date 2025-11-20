@@ -41,17 +41,15 @@
           </div>
         </div>
       </section>
-      <search class="ingredients">
+      <section class="ingredients">
         <div class="calculator">
-          <label for="amount">
-            Zutaten:
-            <input maxlength="2" min="0" max="20" id="amount" type="number" />
-            <button onclick="calcBtn()">Portion</button>
-          </label>
+          <label for="amount">Zutaten:</label>
+          <input name="amount" maxlength="2" min="1" max="20" id="amount" type="number" required />
+          <button onclick="calcBtn()">Portionen</button>
         </div>
         <div class="table">
           <table>
-            <tr>
+            <tr class="highlight">
               <td id="element01">1</td>
               <td>Saltgurke (n)</td>
             </tr>
@@ -75,17 +73,17 @@
               <td id="element06">1</td>
               <td>Glas Oliven, schwarze, ca 100g</td>
             </tr>
-            <tr>
+            <tr class="highlight">
               <td id="element07">1</td>
               <td>Zitrone(n)</td>
             </tr>
-            <tr class="highlight">
+            <tr>
               <td id="element08">125</td>
               <td>ml Olivenöl</td>
             </tr>
           </table>
         </div>
-      </search>
+      </section>
     </main>
   </body>
 </html>

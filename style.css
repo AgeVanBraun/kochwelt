@@ -1,8 +1,12 @@
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
+}
+
+header img {
+  height: 64px;
 }
 
 ol {
@@ -12,52 +16,70 @@ ol {
   list-style-type: none;
 }
 
-main{
-    max-width: 1920px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
+main {
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
-.title-header{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+.title-header {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-
-.title-banner{
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 16px;
+.title-banner {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
 }
 
-.icons{
-    display: flex;
-    justify-content: flex-start;
-    gap: 32px;
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
-.icons img{
-    height: 32px;
+.icons img {
+  height: 32px;
 }
 
-.time, .level, .date{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    background-color: rgb(222, 222, 222);
-    border-radius: 8px;
-    padding: 8px 32px;
+.time,
+.level,
+.date {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: rgb(222, 222, 222);
+  border-radius: 8px;
+  padding: 8px 32px;
 }
 
 input {
-    font-size: 22px;
-    width: 150px;
+  font-size: 22px;
+  width: 150px;
 }
 
-button{
-    font-size: 22px;
+button {
+  font-size: 22px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+td {
+  padding: 8px 12px;
+}
+.highlight {
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  margin-bottom: 32px;
 }
